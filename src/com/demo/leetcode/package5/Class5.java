@@ -28,6 +28,7 @@ public class Class5 {
         while(index < s.length() - 1){
             int count = 1;
             if(s.charAt(index) != s.charAt(index + 1)){
+                index++;
                 continue;
             }
             curr = s.substring(index,index + 2);
@@ -36,7 +37,7 @@ public class Class5 {
                     break;
                 }
                 if(s.charAt(index - count) == s.charAt(index + count + 1)){
-                    curr = s.charAt(index - count) + curr + s.charAt(index);
+                    curr = s.charAt(index - count) + curr + s.charAt(index + count + 1);
                     count++;
                 }
                 else {
