@@ -1,12 +1,48 @@
 package com.demo;
 
+import com.demo.leetcode.package2.Class2;
+import com.demo.leetcode.package2.ListNode;
+import com.demo.leetcode.package3.Class3;
 import com.demo.leetcode.package5.Class5;
+import com.demo.leetcode.package6.Class6;
+import com.demo.leetcode.package7.Class7;
+import com.demo.leetcode.package9.Class9;
 
 public class Test {
 
     public static void main(String[] args){
 
-        String str = "alsshdoigowbfkbasiudfagosfiuahb" + new StringBuffer("fagosfiuahb").reverse().toString() + "sflkasbflaskhfafgkshgaskgh";
-        System.out.println(new Class5().longestPalindrome(str));
+//        ListNode l1 = new ListNode(2);
+//        l1.next = new ListNode(4);
+//        l1.next.next = new ListNode(3);
+//
+//        ListNode l2 = new ListNode(5);
+//        l2.next = new ListNode(6);
+//        l2.next.next = new ListNode(4);
+        /*
+        System.out.println(new Class5().longestPalindrome("" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "111111111111111111111111111111111111111111111111" +
+                "1111111111111111111111111111111111111111"));
+                */
+        System.out.println(new Class9().isPalindrome(0));
     }
 }

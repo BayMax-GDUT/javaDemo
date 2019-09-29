@@ -4,6 +4,7 @@ import java.util.logging.Level;
 
 public class Class5 {
     public String longestPalindrome(String s){
+        if(s.equals(null) || s.equals(""))return s;
         int index = 1;
         String result = s.substring(0,1);
         String curr = "";
