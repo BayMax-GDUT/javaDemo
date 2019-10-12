@@ -4,26 +4,24 @@ public class ChaRu implements BaseSort {
 
     @Override
     public int[] sort(int[] arr, int bgn, int end) {
-        for (int i = bgn + 1; i < end; ++i) {
-            /*
-             * 分为1,2两部分处理，可以囊括j = beg - 1时的情况
-             * 即需要将arr[i]插入到首元素前的位置，若使用一个for
-             * 包括这两部分，则会在发生这种情况时退出
-             */
-            /*1*/
-            int j = i - 1;
-            for (; j >= bgn; --j)
-                if (arr[j] <= arr[i])
-                    break;
-            /*2*/
-            if (j != i - 1) {
-                int temp = arr[i];
-                for (int k = i; k > j + 1; --k) {
-                    arr[k] = arr[k - 1];
+        //把数组第一位数作为一个已经排序好的数组，将后面其他数按大小插入到对应位置，从后面开始迭代
+        for(int i = 1;i < arr.length;i++){
+            for(int j = i - 1;j >= 0;j--){
+                {
+                    if(arr[i] < arr[j])
+                        continue;
                 }
-                arr[j + 1] = temp;
             }
         }
         return arr;
+    }
+
+    public void changeLocated(int[] arr,int oldIndex,int newIndex){
+        int temp = arr[oldIndex];
+
+        for(int i = oldIndex - 1;i >= newIndex;--i){
+            arr[i + 1] = arr[i];
+        }
+        arr[newIndex] = temp;
     }
 }
