@@ -9,7 +9,7 @@ public class MaoPao implements BaseSort{
      * @return
      */
     @Override
-    public int[] sort(int[] array) {
+    public int[] sort(int[] array,int bgn,int end) {
 
         int length = array.length;
         boolean isSorted = true;
