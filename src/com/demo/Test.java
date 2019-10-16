@@ -13,10 +13,11 @@ public class Test {
 
     public static void main(String[] args){
 
-        BaseSort bs = new ChaRu();
-        int[] array = bs.sort(new int[]{10,4,1,7,8,5,6,3,9,0},0,10);
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
+//        BaseSort bs = new ChaRu();
+//        int[] array = bs.sort(new int[]{10,4,1,7,8,5,6,3,9,0},0,10);
+//        for (int i : array) {
+//            System.out.print(i + " ");
+        String s1 = "var haskell = document.getElementsByClassName(\"c-green\")[1].lastElementChild;";
+        System.out.println(s1.equals(s1));
     }
 }
