@@ -1,7 +1,5 @@
 package com.demo.leetcode.package2;
 
-import org.springframework.util.StringUtils;
-
 public class ListNode {
     public int val;
     public ListNode next;

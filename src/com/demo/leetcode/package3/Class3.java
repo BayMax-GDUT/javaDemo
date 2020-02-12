@@ -1,8 +1,5 @@
 package com.demo.leetcode.package3;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Class3 {
 
     public int lengthOfLongestSubString(String s){

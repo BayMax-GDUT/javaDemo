@@ -1,6 +1,5 @@
 package com.demo.leetcode.package5;
 
-import java.util.logging.Level;
 
 public class Class5 {
     public String longestPalindrome(String s){

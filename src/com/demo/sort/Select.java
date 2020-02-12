@@ -1,6 +1,6 @@
 package com.demo.sort;
 
-public class XuanZe implements BaseSort {
+public class Select implements BaseSort {
 
     @Override
     public int[] sort(int[] array,int bgn,int end) {
