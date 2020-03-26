@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efefd5b5-ece1-4c36-b661-ffb0f12e7364" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/com/demo/entity/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/com/demo/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/com/demo/sort/Tong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/spring_aop_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/javaDemo/com/demo/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/javaDemo/com/demo/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/com/demo/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/demo/leetcode/package2/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/com/demo/leetcode/package2/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/demo/leetcode/package3/Class3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/com/demo/leetcode/package3/Class3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/demo/leetcode/package5/Class5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/com/demo/leetcode/package5/Class5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/demo/sort/ChaRu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/com/demo/sort/ChaRu.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XN22d4MIwNCVVgwaIA9GKpq4Pi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../iot-plat" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efefd5b5-ece1-4c36-b661-ffb0f12e7364" name="Default Changelist" comment="" />
+      <created>1580872025492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580872025492</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

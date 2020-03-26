@@ -1,23 +1,55 @@
 package com.demo;
 
-import com.demo.leetcode.package2.Class2;
-import com.demo.leetcode.package2.ListNode;
-import com.demo.leetcode.package3.Class3;
-import com.demo.leetcode.package5.Class5;
-import com.demo.leetcode.package6.Class6;
-import com.demo.leetcode.package7.Class7;
-import com.demo.leetcode.package9.Class9;
-import com.demo.sort.*;
+
+import com.demo.entity.Hero;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
 
 public class Test {
 
     public static void main(String[] args){
 
-//        BaseSort bs = new ChaRu();
-//        int[] array = bs.sort(new int[]{10,4,1,7,8,5,6,3,9,0},0,10);
-//        for (int i : array) {
-//            System.out.print(i + " ");
-        String s1 = "var haskell = document.getElementsByClassName(\"c-green\")[1].lastElementChild;";
-        System.out.println(s1.equals(s1));
+        int index = 100000;
+        ArrayList<String> arrayList = new ArrayList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
+        arrayList.add("1");
+        linkedList.add("1");
+        long result = insert(arrayList,index,0);
+//        System.out.println("ArrayList插入最前面使用时间为：" + result);
+//        result = insert(linkedList,index,0);
+//        System.out.println("LinkedList插入最前面使用时间为：" + result);
+//        result = insert(arrayList,index,index / 2);
+//        System.out.println("ArrayList插入中间使用时间为：" + result);
+//        result = insert(linkedList,index,index / 2);
+//        System.out.println("LinkedList插入中间使用时间为：" + result);
+        result = insert(arrayList, index, -1);
+        System.out.println("ArrayList插入最后面使用时间为：" + result);
+        result = insert(linkedList, index, -1);
+        System.out.println("LinkedList插入最后面使用时间为：" + result);
+    }
+
+    public static long insert(List list, int size, int local){
+        long startTime = System.currentTimeMillis();
+        if (local >= 0) {
+            for (int i = 0; i < size; i++) {
+                list.add(local, i + "");
+            }
+        } else {
+            if(list instanceof LinkedList) {
+                LinkedList list1 = (LinkedList)list;
+                for(int i = 0;i < size;i++) {
+                    ((LinkedList) list).offer(i + "");
+                }
+            } else {
+                for (int i = 0;i < size;i++) {
+                    list.add(i + "");
+                }
+            }
+        }
+        long endTime = System.currentTimeMillis();
+        return endTime-startTime;
     }
 }
