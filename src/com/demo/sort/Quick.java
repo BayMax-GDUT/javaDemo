@@ -1,6 +1,6 @@
 package com.demo.sort;
 
-public class KuaiSu implements BaseSort{
+public class Quick implements BaseSort{
 
     @Override
     public int[] sort(int[] arr, int bgn, int end)  //arr must be the reference of real param

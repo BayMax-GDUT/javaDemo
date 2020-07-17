@@ -1,6 +1,6 @@
 package com.demo.sort;
 
-public class Tong implements BaseSort {
+public class Bucket implements BaseSort {
 
     @Override
     public int[] sort(int[] array, int bgn, int end) {
