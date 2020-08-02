@@ -8,18 +8,59 @@
     <bean id="student1" class="com.demo.entity.Student">
         <property name="id" value="1"></property>
         <property name="age" value="1"></property>
-        <property name="name" value="1"></property>
+        <property name="name"><value></value></property>
+        <property name="deskMate" ref="student2"></property>
     </bean>
 
     <!--通过构造函数进行注入 需要声明相对应的构造函数-->
     <bean id="student2" class="com.demo.entity.Student">
-        <constructor-arg value="2" index="0" name="age"></constructor-arg>
-        <constructor-arg value="2" index="1" name="name"></constructor-arg>
-        <constructor-arg value="2" index="2" name="id"></constructor-arg>
+        <constructor-arg value="2" index="0" name="age" type="int"></constructor-arg>
+        <constructor-arg value="2" index="1" name="name" type="java.lang.String"></constructor-arg>
+        <constructor-arg value="2" index="2" name="id" type="int"></constructor-arg>
     </bean>
 
     <!--通过p命名空间注入-->
     <bean id="student3" class="com.demo.entity.Student" p:age="3" p:id="3" p:name="3" p:deskMate-ref="student1">
 
+    </bean>
+
+    <bean id="collection" class="com.demo.entity.AllCollections">
+       <property name="listProp">
+           <list>
+               <value>a1</value>
+               <value>b1</value>
+               <value>c1</value>
+           </list>
+       </property>
+       <property name="mapProp">
+           <map>
+               <entry>
+                   <key><value>a2</value></key>
+                   <value>a2</value>
+               </entry>
+               <entry>
+                   <key><value>b2</value></key>
+                   <value>b2</value>
+               </entry>
+               <entry>
+                   <key><value>c2</value></key>
+                   <value>c2</value>
+               </entry>
+           </map>
+       </property>
+       <property name="setProp">
+           <set>
+               <value>a3</value>
+               <value>b3</value>
+               <value>c3</value>
+           </set>
+       </property>
+       <property name="arrayProp">
+           <array>
+               <value>a4</value>
+               <value>b4</value>
+               <value>c4</value>
+           </array>
+       </property>
     </bean>
 </beans>

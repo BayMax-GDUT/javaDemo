@@ -1,13 +1,18 @@
 package com.demo;
 
 
-import com.demo.entity.Hero;
-import com.demo.multithreading.MyCallable;
-import com.demo.multithreading.MyRunnable;
-import com.demo.multithreading.MyThread;
-import com.demo.multithreading.SynchronizedExample;
+import com.demo.entity.AllCollections;
+import com.demo.entity.Student;
+import com.demo.entity.User;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.config.IniSecurityManagerFactory;
+import org.apache.shiro.mgt.SecurityManager;
+import org.apache.shiro.subject.Subject;
+import org.apache.shiro.util.Factory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import javax.security.auth.Subject;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -15,11 +20,5 @@ public class Test {
 
     public static void main(String[] args) {
 
-        SynchronizedExample synchronizedExample1 = new SynchronizedExample();
-        SynchronizedExample synchronizedExample2 = new SynchronizedExample();
-        ExecutorService executorService = Executors.newCachedThreadPool();
-        executorService.execute(() -> synchronizedExample1.func());
-        executorService.execute(() -> synchronizedExample2.func());
-        executorService.shutdown();
     }
 }
