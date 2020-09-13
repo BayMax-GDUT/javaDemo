@@ -1,6 +1,10 @@
-package com.demo.dataStructure;
+package com.demo.dataStructure.sequence;
 
-public interface SeqeuenceList<T> {
+/**
+ * 线性表接口
+ * @param <T>
+ */
+public interface SequenceList<T> {
 
     void clear();
 

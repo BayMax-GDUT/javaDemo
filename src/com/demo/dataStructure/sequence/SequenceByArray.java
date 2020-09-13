@@ -1,14 +1,18 @@
-package com.demo.dataStructure;
+package com.demo.dataStructure.sequence;
 
-public class QueueByArray<T extends Number> implements SeqeuenceList<T> {
+/**
+ * 数组实现的线性表
+ * @param <T>
+ */
+public class SequenceByArray<T extends Number> implements SequenceList<T> {
 
     private Object[] eles;
 
     private int N;
 
-    private QueueByArray() {}
+    private SequenceByArray() {}
 
-    public QueueByArray(int length) {
+    public SequenceByArray(int length) {
         this.eles = new Object[length];
         this.N = 0;
     }

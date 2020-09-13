@@ -1,12 +1,16 @@
-package com.demo.dataStructure;
+package com.demo.dataStructure.sequence;
 
-public class QueueByLinkedList<T extends Number> implements SeqeuenceList<T> {
+/**
+ * 链表实现的线性表
+ * @param <T>
+ */
+public class SequenceByLinkedList<T extends Number> implements SequenceList<T> {
 
     private Node node;
 
     private int N;
 
-    public QueueByLinkedList() {
+    public SequenceByLinkedList() {
         this.node = this.new Node();
         this.N = 0;
     };

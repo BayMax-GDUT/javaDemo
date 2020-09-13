@@ -1,6 +1,10 @@
-package com.demo.dataStructure;
+package com.demo.dataStructure.sequence;
 
-public class QueueByTwoWayLinkedList<T extends Number> implements SeqeuenceList<T> {
+/**
+ * 双向链表实现的线性表
+ * @param <T>
+ */
+public class SequenceByTwoWayLinkedList<T extends Number> implements SequenceList<T> {
 
     private Node first;
 
