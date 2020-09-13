@@ -1,8 +1,11 @@
 package com.demo.leetcode.package7;
 
+import org.junit.Test;
+
 public class Class7 {
-    public int reverse(int x){
-        if(x == 0)return 0;
+    @Test
+    public void reverse(){
+        int x = -2147483648;
         boolean isPositive = x > 0;
         //为负数，转成正数进行运算
         if(!isPositive){
@@ -18,27 +21,34 @@ public class Class7 {
             result += single;
             x /= 10;
         }
-//        int length = 1;
-//        int a = x;
-//        do{
-//            int temp = a / 10;
-//            if(temp > 0)
-//            {
-//                a = temp;
-//                length++;
-//            }
-//            else
-//                break;
-//        }
-//        while(true);
-//        String str = "";
-//        for(int i = 0;i < length;i++){
-//            str += x % 10;
-//            x /= 10;
-//        }
-//        int result = Integer.parseInt(str);
         if(!isPositive){result = 0 - result;}
-        if(result > Integer.MAX_VALUE || result < Integer.MIN_VALUE)return 0;
-        return result.intValue();
+        if(result > Integer.MAX_VALUE || result < Integer.MIN_VALUE)return;
+        System.out.println(result.intValue());
+    }
+
+    @Test
+    public void reverse1() {
+        int x = -2147483648;
+        boolean isNegative = false;
+        long xTemp = x;
+        if (x < 0) {
+            isNegative = true;
+            xTemp = 0L - x;
+        }
+        StringBuilder stringBuilder = new StringBuilder("" + xTemp);
+        stringBuilder = stringBuilder.reverse();
+        String str = stringBuilder.toString();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != '0') {
+                str = str.substring(i);
+                break;
+            }
+        }
+        if (isNegative) {
+            str = "-" + str;
+        }
+        Long longTemp = Long.parseLong(str);
+        if (longTemp > Integer.MAX_VALUE || longTemp < Integer.MIN_VALUE) return;
+        System.out.println(longTemp.intValue());
     }
 }
