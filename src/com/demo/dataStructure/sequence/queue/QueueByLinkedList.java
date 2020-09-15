@@ -26,7 +26,7 @@ public class QueueByLinkedList<T> implements Queue<T> {
         Node point = new Node();
         front = point;
         end = point;
-        N =0;
+        N = 0;
         maxLength = count;
     }
 
@@ -50,7 +50,11 @@ public class QueueByLinkedList<T> implements Queue<T> {
     public T outQueue() {
         if (N != null && N > 0) {
             T t = front.data;
-            front = front.next;
+            if (N > 1) {
+                front = front.next;
+            } else {
+                front = end = new Node();
+            }
             N--;
             return t;
         } else {
