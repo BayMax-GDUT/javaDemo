@@ -15,7 +15,7 @@ public class DateUtils {
     private static final int WEEK_LENGTH = 7;
 
     /**
-     * find out all days between startTime and endTime, accounting to the programmer scanned.
+     * find out all suit weekdays between startTime and endTime, accounting to the programmer scanned.
      * @param startTime the time range beginning
      * @param endTime the time range stop
      * @param weekday about which weekday is chosen
@@ -43,5 +43,4 @@ public class DateUtils {
         }
         return result;
     }
-
 }
