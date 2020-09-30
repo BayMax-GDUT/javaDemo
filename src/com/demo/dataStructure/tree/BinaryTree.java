@@ -1,7 +1,6 @@
-package com.demo.dataStructure.sequence.tree;
+package com.demo.dataStructure.tree;
 
 import java.util.List;
-import java.util.PrimitiveIterator;
 
 public interface BinaryTree {
 
