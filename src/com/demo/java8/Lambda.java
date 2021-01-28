@@ -1,6 +1,6 @@
 package com.demo.java8;
 
-public class Test {
+public class Lambda {
 
     public static void main(String[] args) {
         final int num = 1;
