@@ -60,6 +60,49 @@ public class StreamAPI {
 //           numbers.parallelStream().forEach(System.out::println);
         }
 
+        /* distinct */
+        {
+            List<Integer> numbers = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+//            System.out.println("before distinct: " + numbers);
+//            System.out.println("after distinct: " + numbers.stream().distinct().collect(Collectors.toList()));
+        }
+
+        /* match */
+        {
+            List<Integer> numbers = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+//            System.out.println(numbers.stream().allMatch(s -> s >= 5));
+//            System.out.println(numbers.stream().anyMatch(s ->  s == 9));
+//            System.out.println(numbers.stream().noneMatch(s -> s > 10));
+        }
+
+        /* count */
+        {
+            List<Integer> numbers = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+//            System.out.println(numbers.stream().limit(5).count());
+        }
+
+        /* reduce */
+        {
+            List<Integer> numbers = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                numbers.add(i);
+            }
+            Optional<Integer> reduce = numbers.stream().reduce(Integer::max);
+            reduce.ifPresent(System.out::println);
+        }
+
         /* collectors */
         {
             List<String> numbers = new ArrayList<>();
@@ -76,18 +119,6 @@ public class StreamAPI {
 //            System.out.println("joining: " + numbers.stream().collect(Collectors.joining(",")));
         }
 
-        /* distinct */
-        {
-            List<Integer> numbers = new ArrayList<>();
-            for (int i = 0; i < 10; i++) {
-                numbers.add(i);
-            }
-            for (int i = 0; i < 10; i++) {
-                numbers.add(i);
-            }
-            System.out.println("before distinct: " + numbers);
-            System.out.println("after distinct: " + numbers.stream().distinct().collect(Collectors.toList()));
-        }
     }
 }
 
