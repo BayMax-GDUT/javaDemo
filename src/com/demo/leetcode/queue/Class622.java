@@ -4,21 +4,6 @@ import org.junit.Test;
 
 public class Class622 {
 
-    @Test
-    public void test () {
-        MyCircularQueue queue = new MyCircularQueue(3);
-        queue.enQueue(1);
-        queue.enQueue(2);
-        queue.enQueue(3);
-        queue.enQueue(4);
-        queue.Rear();
-        queue.isFull();
-        queue.deQueue();
-        queue.enQueue(4);
-        queue.Rear();
-
-    }
-
     class MyCircularQueue {
 
         private int[] data;
