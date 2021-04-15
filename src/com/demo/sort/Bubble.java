@@ -1,12 +1,11 @@
 package com.demo.sort;
 
-public class MaoPao implements BaseSort{
+/**
+ * 冒泡排序
+ * 相邻互换，将最大的数放到数组的最后
+ */
+public class Bubble implements BaseSort{
 
-    /**
-     * 冒泡排序
-     * 相邻互换，将最大的数放到数组的最后
-     *
-     */
     @Override
     public int[] sort(int[] array,int bgn,int end) {
 
