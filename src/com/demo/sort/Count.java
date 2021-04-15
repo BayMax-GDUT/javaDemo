@@ -37,13 +37,4 @@ public class Count implements BaseSort{
         }
         return array;
     }
-
-    @Test
-    public void test() {
-        int[] array = new int[]{-2,1,45,6,2,4,8,24};
-        sort(array, 0, 0);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-    }
 }
