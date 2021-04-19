@@ -1,4 +1,4 @@
-package com.demo.leetcode.package14;
+package com.demo.leetcode.string;
 
 import org.junit.Test;
 

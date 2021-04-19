@@ -1,4 +1,4 @@
-package com.demo.leetcode.package26;
+package com.demo.leetcode.array;
 
 public class Class26 {
 

@@ -1,4 +1,4 @@
-package com.demo.leetcode.package155;
+package com.demo.leetcode.stack;
 
 public class Class155 {
     class MinStack {

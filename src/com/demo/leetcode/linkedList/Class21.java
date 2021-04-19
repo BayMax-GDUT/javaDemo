@@ -1,4 +1,4 @@
-package com.demo.leetcode.package21;
+package com.demo.leetcode.linkedList;
 
 import org.junit.Test;
 
@@ -32,11 +32,13 @@ public class Class21 {
             current = current.next;
         }
     }
+
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
 }
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
+

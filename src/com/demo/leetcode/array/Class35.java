@@ -1,4 +1,4 @@
-package com.demo.leetcode.package35;
+package com.demo.leetcode.array;
 
 public class Class35 {
 

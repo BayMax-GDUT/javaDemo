@@ -1,4 +1,4 @@
-package com.demo.leetcode.package28;
+package com.demo.leetcode.string;
 
 public class Class28 {
 

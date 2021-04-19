@@ -1,9 +1,11 @@
 package com.demo.leetcode.package5;
 
-
+/**
+ * 未完成
+ */
 public class Class5 {
     public String longestPalindrome(String s){
-        if(s.equals(null) || s.equals(""))return s;
+        if(s == null || s.equals(""))return s;
         int index = 1;
         String result = s.substring(0,1);
         String curr = "";
@@ -11,13 +13,10 @@ public class Class5 {
         while(index < s.length() - 1){
             curr = "" + s.charAt(index);
             int count = 1;
-            while(true){
-                if(s.charAt(index - count) == s.charAt(index + count)){
-                    curr = s.charAt(index - count) + curr + s.charAt(index + count);
-                    count++;
-                    if(index - count < 0 || index + count >= s.length()){ break; }
-                }
-                else{ break;}
+            while(s.charAt(index - count) == s.charAt(index + count)){
+                curr = s.charAt(index - count) + curr + s.charAt(index + count);
+                count++;
+                if(index - count < 0 || index + count >= s.length()){ break; }
             }
             if(curr.length() > result.length()){ result = curr;}
             index++;
