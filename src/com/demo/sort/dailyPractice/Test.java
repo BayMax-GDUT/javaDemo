@@ -4,8 +4,7 @@ import com.demo.sort.dailyPractice.date0420.*;
 
 /**
  * 2021/4/19起，每天写排序练习题
- * 单数天写计数排序、选择排序、插入排序
- * 双数天写冒泡排序、希尔排序
+ * 计数排序、选择排序、插入排序、写冒泡排序、希尔排序
  */
 public class Test {
 
