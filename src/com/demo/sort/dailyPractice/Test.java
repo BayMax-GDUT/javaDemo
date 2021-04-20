@@ -1,6 +1,6 @@
 package com.demo.sort.dailyPractice;
 
-import com.demo.sort.dailyPractice.date0419.*;
+import com.demo.sort.dailyPractice.date0420.*;
 
 /**
  * 2021/4/19起，每天写排序练习题
@@ -10,28 +10,32 @@ import com.demo.sort.dailyPractice.date0419.*;
 public class Test {
 
     public static void main(String[] args) {
-        int[] testData = new int[]{2,7,6,5,3,1,9,8,4,0};
-        int[] sort = Count.sort(testData);
+        int[] testData1 = new int[]{2,7,6,5,3,1,9,8,4,0};
+        int[] testData2 = new int[]{2,7,6,5,3,1,9,8,4,0};
+        int[] testData3 = new int[]{2,7,6,5,3,1,9,8,4,0};
+        int[] testData4 = new int[]{2,7,6,5,3,1,9,8,4,0};
+        int[] testData5 = new int[]{2,7,6,5,3,1,9,8,4,0};
+        int[] sort = Count.sort(testData1);
         for (int i = 0; i < sort.length; i++) {
             System.out.print(sort[i]);
         }
         System.out.println();
-        sort = Select.sort(testData);
+        sort = Select.sort(testData2);
         for (int i = 0; i < sort.length; i++) {
             System.out.print(sort[i]);
         }
         System.out.println();
-        sort = Insert.sort(testData);
+        sort = Insert.sort(testData3);
         for (int i = 0; i < sort.length; i++) {
             System.out.print(sort[i]);
         }
         System.out.println();
-        sort = Bubble.sort(testData);
+        sort = Bubble.sort(testData4);
         for (int i = 0; i < sort.length; i++) {
             System.out.print(sort[i]);
         }
         System.out.println();
-        sort = Shell.sort(testData);
+        sort = Shell.sort(testData5);
         for (int i = 0; i < sort.length; i++) {
             System.out.print(sort[i]);
         }

@@ -1,8 +1,8 @@
-package com.demo.sort.dailyPractice.date0419;
+package com.demo.sort.dailyPractice.date0420;
 
 public class Bubble {
 
-    public static int[] sort (int[] array) {
+    public static int[] sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             boolean change = false;
             for (int j = 0; j < array.length - i - 1; j++) {
