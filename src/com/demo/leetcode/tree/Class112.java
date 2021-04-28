@@ -11,8 +11,6 @@ public class Class112 {
         if (node.left == null && node.right == null) {
             return targetSum == currentSum + node.val;
         }
-        // target不够大且还未到叶子节点，直接返回false
-        if (targetSum < currentSum + node.val) return false;
         return recursive(node.left, targetSum, currentSum + node.val)
                 || recursive(node.right, targetSum, currentSum + node.val);
     }
