@@ -1,5 +1,8 @@
 package com.demo.leetcode.tree;
 
+/**
+ * 二叉树通用节点
+ */
 public class TreeNode {
     int val;
     TreeNode left;
