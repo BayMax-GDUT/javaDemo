@@ -1,4 +1,4 @@
-package com.demo.Utils;
+package com.demo.utils;
 
 import jxl.Sheet;
 import jxl.Workbook;

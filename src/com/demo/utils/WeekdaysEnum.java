@@ -1,4 +1,4 @@
-package com.demo.Utils;
+package com.demo.utils;
 
 public enum WeekdaysEnum {
 

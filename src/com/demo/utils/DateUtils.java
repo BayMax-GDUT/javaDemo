@@ -1,4 +1,4 @@
-package com.demo.Utils;
+package com.demo.utils;
 
 import java.util.ArrayList;
 import java.util.Calendar;
