@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 字节面试题
  * 深拷贝一个单向链表
  * 链表的每个节点除了next外还有一个rand节点指向链表里随机一个节点
  */
