@@ -17,7 +17,7 @@ public class Sort {
         return array;
     }
 
-    public static int[] quick(int[] array) {
+    public static int[] quick(int[] array, int start, int end) {
 
         return array;
     }
